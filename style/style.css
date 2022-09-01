@@ -1,0 +1,115 @@
+main {
+    margin-top: 5%;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #FFFFFF;
+    padding: 25px 50px;
+    flex-grow: 1;
+    height: fit-content;
+    border: 1px solid #888;
+}
+
+/* FORM TITLE  */
+.h2{
+    text-align:center; 
+    margin-bottom: 4rem; 
+}
+.h2-small { 
+    font-weight:normal; 
+    font-size: 18px;
+    color:#888; 
+    display:block; 
+}
+
+
+/* form starting stylings ------------------------------- */
+
+.group{
+    position:relative; 
+    margin-bottom:2rem; 
+}
+
+input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ced4da;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    padding:18px 10px 10px 5px;
+    width:100%;
+    background: #fff;
+    border: none;
+    overflow: hidden;
+}
+
+.input-box .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+}
+
+input:focus{ outline:none; }
+.input-box:focus{ outline:none; }
+select:focus{ outline:none; }
+
+  /* LABEL ======================================= */
+.form-label{
+    /* color:#999;  */
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+  /* active state */
+input:focus ~ .form-label, input:valid ~ .form-label{
+    top:-20px;
+    font-size:18px;
+    color:#2196F3;
+}
+
+input:focus{
+    border-bottom: 1.5px solid #2196F3;
+}
+
+
+/* input:read-only ~ .form-label, input:valid ~ .form-label{
+    top:-20px;
+    font-size:14px;
+} */
+
+  /* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#2196F3; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#2196F3; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#2196F3; }
+    to 	{ width:0; background:transparent; }
+}
